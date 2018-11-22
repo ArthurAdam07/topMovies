@@ -1,0 +1,7 @@
+{
+  "name": "topMovies",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
