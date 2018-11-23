@@ -16,7 +16,7 @@ import { FirebaseServiceProvider } from '../../providers/firebase-service/fireba
 })
 export class SavePage {
 
-movie {
+movie = {
 	'title': '',
 	'year': '',
 	'note': '',

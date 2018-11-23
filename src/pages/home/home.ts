@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { PrincipalPage } from "../principal/principal";
 import { SobrePage } from "../sobre/sobre";
+import { SavePage } from "../save/save";
 
 @Component({
   selector: 'page-home',
@@ -21,5 +22,9 @@ onSobrePage(){
 	this.navCtrl.push('SobrePage');
 
 };
+
+add(){
+	this.navCtrl.push(SavePage);
+}
 
 }

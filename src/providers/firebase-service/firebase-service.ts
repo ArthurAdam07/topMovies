@@ -14,10 +14,10 @@ export class FirebaseServiceProvider {
     console.log('Hello FirebaseServiceProvider Provider');
   }
 
-save(course: any) {
-	this.db.list('courses')
-	    .push(course)
-	    then(r => console.log(r));
+save(movie: any) {
+	this.db.list('movies')
+	    .push(movie)
+	    .then(r => console.log(r));
 } 
 
 }
