@@ -29,12 +29,16 @@ movie = {
   constructor(
   public navCtrl: NavController,
   public navParams: NavParams,
-  public dbService: FirebaseService
+  public dbService: FirebaseServiceProvider
    ) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SavePage');
   }
+
+save(movie) {
+	console.log(movie);
+}
 
 }

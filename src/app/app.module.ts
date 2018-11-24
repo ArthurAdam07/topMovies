@@ -25,21 +25,24 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    apiKey, "AIzaSyCjejiA3uLihfEhVmnkYdC2iAFiVAuDx9E",
-    authDomain, "topmovies-4c667.firebaseapp.com",
-    databaseURL, "https://topmovies-4c667.firebaseio.com",
-    projectId, "topmovies-4c667",
-    storageBucket, "topmovies-4c667.appspot.com",
-    messagingSenderId, "311432639951"
+    AngularFireModule.initializeApp({
+    apiKey: "AIzaSyCjejiA3uLihfEhVmnkYdC2iAFiVAuDx9E",
+    authDomain: "topmovies-4c667.firebaseapp.com",
+    databaseURL: "https://topmovies-4c667.firebaseio.com",
+    projectId: "topmovies-4c667",
+    storageBucket: "topmovies-4c667.appspot.com",
+    messagingSenderId: "311432639951"
+    }),
+    AngularFireDatabaseModule
   ],
-  AngularFireDatabaseModule
 
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
     PrincipalPage,
-    SobrePage
+    SobrePage,
+    SavePage
   ],
   providers: [
     StatusBar,
